@@ -1,0 +1,47 @@
+#icon{
+    text-align:center;
+    font-weight:bold;
+    font-size: xx-large;
+    box-sizing:border-box;
+    margin-left:auto;
+    color: red;
+}
+header{
+  width: 100vw;
+  text-align: center;
+}
+.bld{
+  text-decoration: underline;
+  text-decoration-color: rgb(11, 11, 78);
+  font-size:x-large
+  
+}
+body{
+  overflow-x: hidden;
+   background-color: rgb(233, 247, 246);
+  font-family:   monospace,'Arial Narrow Bold';
+  font-size: large;
+}
+#imp{
+  width: 95%;
+  height: fit-content;
+  border: 10px;
+  border-color: black;
+  color: red;
+  font-family:  'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+}
+#agree{
+  font-weight: normal;
+  font-style: italic;
+}
+#submit_button{
+  font-style: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bolder;
+box-sizing: border-box;
+margin-left: 40%;
+}
+
+
+

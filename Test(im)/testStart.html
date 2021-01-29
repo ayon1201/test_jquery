@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<link rel="stylesheet" href="teststart.css">
+<script src = "quiz.js" ></script>
+<!-- <script type="text/javascript">
+        window.history.forward();
+    function noBack() {
+        window.history.forward();
+    }   
+</script> -->
+<script src = "teststart.js"></script>
+<script type="text/javascript">
+    //JavaScript function that enables or disables a submit button depending
+    //on whether a checkbox has been ticked or not.
+    // document.getElementById("submit_button").disabled = true;
+    // function terms_changed(td){
+    //     var td=document.getElementById('td')
+    //     //If the checkbox has been checked
+    //     if(td.checked){
+    //         //Set the disabled property to FALSE and enable the button.
+    //         document.getElementById("submit_button").disabled = false;
+    //     } else{
+    //         //Otherwise, disable the submit button.
+    //         document.getElementById("submit_button").disabled = true;
+    //     }
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <!--<div class="">
+        <div id = 'starter'>
+                <label for="userName" style="display: none;">UserName</label>
+                <input id='userName' type="text" placeholder="Enter yor name"/>
+                <br/>
+                
+                <button id ='continue' onclick="startGame() ">Continue</button>
+                <br/>
+            </div>
+    
+    </div>-->
+    <header><span id='icon'>Please read the instructions carefully</span></<header>
+
+    </header>
+    <ul>
+        <li><p class="bld">General Instructions:</p></li>
+        <ol type="1">
+            <li>Total duration of JEE-Main_BTECH is 180 min.</li>
+            <li>The clock will be set at the server. The countdown timer in the top right corner of screen will display
+                the remaining time available for you to complete the examination. When the timer reaches zero, the
+                examination will end by itself. You will not be required to end or submit your examination.</li>
+            <li>The Questions Palette displayed on the right side of screen will show the status of each question using
+                one of the following symbols:</li>
+            <ol type="i">
+                <li><img src="../img/Images_ashi/notvisited.jpg" alt="Not Visited-"> have not visited the question yet.</li>
+                <li><img src="../img/Images_ashi/notans.jpg" alt="Not answered-">You have not answered the question.</li>
+                <li><img src="../img/Images_ashi/answered.jpg" alt="Answered-">You have answered the question.</li>
+                <li><img src="../img/Images_ashi/mark_review.jpg" alt="Unanswered Marked for review-">You have NOT answered
+                    the question, but have marked the question for review.</li>
+                <li><img src="../img/Images_ashi/answered_marked_review.jpg" alt="Answered and marked for review-">&nbspThe
+                    question(s) "Answered and Marked for Review" will be considered for evalution.</li>
+            </ol>
+            <li>You can click on <img src="../img/Images_ashi/nav_down.jpg"> navigate to the bottom and <img src="../img/Images_ashi/nav_up.jpg"> to navigate to top of the question are, without
+                scrolling.</li>
+            <!-- <li></li>
+            <li></li> -->
+        </ol>
+        <li><p class="bld">Navigating to a Question:</p></li>
+        <ol type="1" start="5">
+            <li>To answer a question, do the following:</li>
+
+            <ol type="a">
+                <li>click on the question number in the Question Palette at the right of your screen to go to that
+                    numbered
+                    question directly. Note that using this option does NOT save your answer to the current question.
+                </li>
+                <li>Click on Save & Next to save your answer for the current question and then go to the next question.
+                </li>
+                <li>Click on Mark for Review & Next to save your answer for the current question, mark it for review,
+                    and
+                    then go to the next question.</li>
+            </ol>
+        </ol>
+        <li><p class="bld">Answering a Question:</p></li>
+        <ol type="1" start="6">
+            <li>Procedure for answering a multiple choice type question:</li>
+            <ol type="a">
+                <li>To select you answer, click on the button of one of the options.</li>
+                <li>To deselect your chosen answer, click on the button of the chosen option again or click on the Clear
+                    Response button</li>
+                <li>To change your chosen answer, click on the button of another option</li>
+                <li>To save your answer, you MUST click on the Save & Next button.</li>
+                <li>To mark the question for review, click on the Mark for Review & Next button.</li>
+            </ol>
+            <li>To change your answer to a question that has already been answered, first select that question for answering and then follow the procedure for answering that type of question.</li>
+        </ol>
+
+        <li><p class="bld">Navigating through sections:</p></li>
+        <ol type="1" start="8">
+            <li>Sections in this question paper are displayed on the top bar of the screen. Questions in a section can be viewed by click on the section name. The section you are currently viewing is highlighted.</li>
+            <li>After click the Save & Next button on the last question for a section, you will automatically be taken to the first question of the next section.</li>
+            <li>You can shuffle between sections and questions anything during the examination as per your convenience only during the time stipulated</li>
+            <li>Candidate can view the corresponding section summery as part of the legend that appears in every section above the question palette.</li>
+        </ol>
+    </ul>
+<p id="imp">Please note that to submit properly and avoid any error in your test first enter your username and password properly in the appropriate section.</p>
+    <!-- <button onclick="document.location='test.html'"> Start </button> -->
+    <!-- <label for="td">
+        <input type="checkbox" id="td" onclick="terms_changed() on">&nbsp;&nbsp;I have read and understood the instructions. All computer hardware allotted to me are in proper working condition. I declare  that I am not in possession of / not wearing / not  carrying any prohibited gadget like mobile phone, bluetooth  devices  etc. /any prohibited material with me into the Examination Hall.I agree that in case of not adhering to the instructions, I shall be liable to be debarred from this Test and/or to disciplinary action, which may include ban from future Tests / Examinations
+    </label>
+    <input type="button" id="submit_button" disabled class="btn btn-secondary" value="Take This Test" onclick="openLink()" /> -->
+    <form method="post">
+        <div>
+            <input type="checkbox" id="terms_and_conditions" value="1"/>
+            <label for="terms_and_conditions"><span id="agree">I have read and understood the instructions. All computer hardware allotted to me are in proper working condition. I declare  that I am not in possession of / not wearing / not  carrying any prohibited gadget like mobile phone, bluetooth  devices  etc. /any prohibited material with me into the Examination Hall.I agree that in case of not adhering to the instructions, I shall be liable to be debarred from this Test and/or to disciplinary action, which may include ban from future Tests / Examinations.</span></label>
+            
+        </div>
+        <div>
+            <button type="submit" id="submit_button" onclick="openLink()" disabled>START THE TEST</button>
+        </div>
+    </form>
+    <script>
+    $('#terms_and_conditions').click(function(){
+    //If the checkbox is checked.
+    if($(this).is(':checked')){
+        //Enable the submit button.
+        $('#submit_button').attr("disabled", false);
+    } else{
+        //If it is not checked, disable the button.
+        $('#submit_button').attr("disabled", true);
+    }
+});
+
+    </script>
+    <!-- <script type="text/javascript"> 
+
+            var popup;
+
+            function openPopup()
+
+            {
+
+            popup = window.open("test.html","Tab_NAME_HERE", "height=800,width=1200")
+
+            }
+
+            function closePopup()
+
+            {
+
+            popup.close();
+
+            }
+
+            </script> -->
+
+    <!-- <a href="" onclick="openLink();">Link</a> -->
+    <script>
+        function openLink() {
+            window.open('test1.html', '1429893142534', 'width=' + (parseInt(window.innerWidth) * 0.3) + ',height=' + (parseInt(window.innerHeight) * .3) + ',toolbar=0,menubar=0,location=0,status=0,scrollbars=1,resizable=0,left=0,top=0');
+            return false;
+        }
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
